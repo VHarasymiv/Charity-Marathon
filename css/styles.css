@@ -1,0 +1,504 @@
+:root {
+  --main-color: #001D3D;
+  --second-color: #888A98;
+  --main-bg-color: #F0F0F0;
+  --orange: #FF6B00;
+}
+
+body {
+  color: var(--main-color);
+  font: 12px/150% 'Literata', serif;
+  background-color: var(--main-bg-color);
+}
+
+h1, h3, h5, a, .logo {
+  color: inherit;
+  font: 700 12px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+h1,
+.team-header {
+  font-size: 24px;
+}
+
+h3, h5 {
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.switch-color {
+  color: var(--second-color);
+}
+
+/* BLOCKS */
+
+header,
+footer,
+.main-info,
+.day-program,
+.team-block,
+.team-zcu-block {
+    background-color: #FFFFFF;
+}
+
+header {
+  padding: 11px 20px;
+  margin-bottom: 24px;
+}
+
+section {
+  max-width: 335px;
+  padding: 48px 24px;
+  border-radius: 24px;
+  margin-bottom: 80px;
+}
+
+/* TEAM */
+
+.team-block,
+.team-zcu-block {
+  padding: 76px 12px;
+  border-radius: 24px;
+}
+
+.team-block {
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.team-zcu-block {
+  margin-top: 80px;
+}
+
+.team-item {
+  margin: 12px 0 12px 0;
+}
+
+.card-item {
+  line-height: 200%;
+}
+
+.team-g-img {
+  width: 100px;
+}
+
+.team-m-img {
+  width: 80px;
+}
+
+.team-x-img {
+    width: 18px;
+}
+
+.team-header {
+  margin: 24px 0;
+}
+
+/* HEADER */
+
+.logo {
+  weight: 900;
+  width: 120px;
+  padding: 6px 0px 6px 12px;
+  background-image: url("../images/logo-bg.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MAIN INFO */
+
+.info-img-col {
+  width: 173px;
+}
+
+.info-item {
+  margin-bottom: 12px;
+}
+
+.info-block {
+  margin-top: 12px;
+  margin-bottom: 88px;
+}
+
+/* NAVIGATION */
+
+.navbar-light {
+  color: var(--main-color);
+}
+
+.nav-item>.active-page,
+.nav-item>.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-item>.nav-link {
+  color: inherit;
+}
+
+.navbar-burger-icon {
+  background-image: url("../images/burger-icon.svg");
+}
+
+/* BUTTONS */
+
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  background: linear-gradient(270deg, #FF6B00 0%, #FFA800 92.03%);
+  text-decoration: none;
+  text-align: center;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+/* DISTANCE */
+
+.distance-block,
+.regis-block {
+  position: relative;
+  border: #001D3D solid 6px;
+}
+
+
+.team-container,
+.regis-block {
+  margin-top: 680px;
+}
+
+.distance-header,
+.regis-header {
+  position: absolute;
+}
+
+.distance-header {
+  top: -27px;
+  left: 20px;
+}
+
+.regis-header {
+  top: -19px;
+  left: 20px;
+}
+
+.distance-header > span,
+.regis-header > span {
+  background-color: var(--main-bg-color);
+  box-shadow: var(--main-bg-color) 11px 0px 0px,
+              var(--main-bg-color) -6px 0px 0px;
+  &:after {
+    top: -13px;
+  }
+}
+
+.distance-link {
+  font-size: 24px;
+}
+
+.nav {
+  margin-bottom: 24px;
+}
+
+.distance-text {
+  margin: 20px 0 24px 0;
+}
+
+/* PROGRAM */
+
+.day-program {
+  position: absolute;
+  top: 60%;
+  padding: 48px 24px;
+  border-radius: 24px;
+  opacity: 0.80;
+}
+
+.program-img {
+  border-radius: 24px;
+}
+
+/* FORMS */
+
+.input-text,
+.input-item {
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  margin-bottom: 12px;
+  font-weight: 300;
+}
+
+.input-item:-webkit-autofill,
+.input-item:-webkit-autofill:hover,
+.input-item:-webkit-autofill:focus,
+.input-item:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
+  transition: none;
+}
+
+.input-text:focus,
+.input-item:focus {
+  background-color: #FFFFFF;
+  box-shadow: 0 0 0 0.12rem rgba(255, 127, 0, 1);
+}
+
+.input-item:hover,
+.input-item:focus,
+.input-item:active {
+  border: none;
+}
+
+ol {
+  margin-bottom: 48px;
+}
+
+/* CONTACTS */
+
+.contact-header {
+  margin-bottom: 24px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding-bottom: 24px;
+}
+
+.contact-list-header {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.contact-list-item {
+  /* box-shadow: 4px 8px rgba(63, 112, 166, 0.1); */
+  background-color: #FFFFFF;
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.footer-bg {
+  background-image: url("../images/footer-bg.png");
+  background-color: var(--main-bg-color);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-b {
+  padding: 18px 32px;
+}
+
+/* MEDIA */
+
+@media (min-width:768px) {
+  header {
+    margin-bottom: 42px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .logo {
+    width: 240px;
+    padding: 6px 0px 6px 12px;
+  }
+
+  .team-col,
+  .info-img-col {
+    order: 1;
+  }
+
+  .info-img-col {
+    width: 303px;
+  }
+
+  .btn {
+    max-width: 305px;
+  }
+
+  .info-item {
+    max-width: 305px;
+    margin-bottom: 24px;
+  }
+
+  .info-text {
+    max-width: 280px;
+  }
+
+  .team-block,
+  .team-zcu-block {
+    padding: 80px 12px;
+  }
+
+  .team-block {
+    margin-top: 64px;
+  }
+
+  .team-zcu-block {
+    margin-top: 120px;
+  }
+
+  .distance-text {
+    margin: 24px 0 48px 0;
+  }
+
+  .distance-block,
+  .regis-block {
+    padding: 80px 0 80px 0;
+  }
+
+  .distance-header,
+  .regis-header {
+    left: 8%;
+  }
+
+  .distance-header {
+    top: -45px;
+  }
+
+  .regis-header {
+    top: -30px;
+    left: 8%;
+  }
+
+  .day-program {
+    top: 25%;
+    left: 34%;
+    padding: 64px;
+  }
+
+  .program-img {
+    border-radius: 40px;
+  }
+
+  .input-text,
+  .input-item {
+    padding: 16px 32px;
+  }
+
+  .contact-header {
+    margin-bottom: 42px;
+  }
+
+  .contact-list-header {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .contact-list {
+    padding-bottom: 58px;
+  }
+
+  .contact-block {
+    order: 2;
+  }
+
+  .footer-bg {
+    background-image: url("../images/footer-bg.png");
+    padding-top: 80px;
+  }
+
+  .footer-b {
+    padding: 32px 0;
+  }
+
+  .team-g-img {
+    width: 150px;
+  }
+
+  .team-m-img {
+    width: 125px;
+  }
+
+  .team-x-img {
+      width: 25px;
+  }
+  .info-block {
+    margin-top: 34px;
+    margin-bottom: 132px;
+  }
+}
+
+@media (min-width:992px) {
+  body {
+    font-size: 16px;
+  }
+  .team-zcu-text {
+    max-width: 511px;
+  }
+}
+
+@media (min-width:1200px) {
+
+  section {
+    padding: 0;
+    border-radius: 40px;
+    margin-bottom: 120px;
+  }
+
+  .regis-block,
+  .team-container {
+    margin-top: 320px;
+  }
+
+  .program-block {
+    margin-top: 120px;
+  }
+
+  h1,
+  .team-header {
+    font-size: 48px;
+  }
+
+  .btn {
+    font-size: 20px;
+    padding: 24px 48px;
+    margin-top: 48px;
+    border: 0;
+  }
+
+  .info-item {
+    max-width: 555px;
+  }
+
+  .info-text,
+  .distance-text {
+    max-width: 471px;
+  }
+
+  .info-box-mess {
+    padding: 80px 0 78px 0;
+  }
+
+  /* .info-img-col {
+    width: 373px;
+    order: 1;
+  } */
+
+  .distance-link {
+    font-size: 48px;
+  }
+
+  .team-g-img {
+      width: 214px;
+    height: 214px;
+  }
+
+  .team-m-img {
+    width: 175px;
+    height: 250px;
+  }
+
+}
