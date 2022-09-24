@@ -31,9 +31,14 @@ h3 {
 }
 
 .switch-color {
+
   color: var(--second-color);
 }
 
+a {
+  font: 500 12px/150% 'Literata', serif;
+  text-decoration: none;
+}
 /* BLOCKS */
 
 header,
@@ -162,6 +167,10 @@ a:active {
   color: var(--orange);
 }
 
+.nav-item > .arr-image:hover {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(3561%) hue-rotate(360deg) brightness(101%) contrast(109%);
+}
+
 .nav-item>.nav-link {
   color: inherit;
 }
@@ -219,10 +228,16 @@ button:focus {
   border: #001D3D solid 6px;
 }
 
+.spacer {
+  margin-bottom: 100%;
+}
 
-.team-container,
 .regis-block {
   margin-top: 680px;
+}
+
+.team-container {
+  margin-top: 580px;
 }
 
 .distance-header,
@@ -270,7 +285,7 @@ button:focus {
 .card-item,
 .input-item,
 .regis-l-item > span {
-  font: 12px 'Literata', serif;
+  font: 300 12px 'Literata', serif;
 }
 
 .regis-l-item > span {
@@ -328,6 +343,11 @@ button:focus {
 .input-item:focus,
 .input-item:active {
   border: none;
+}
+
+.form-select {
+  color: var(--second-color);
+  font-weight: 300;
 }
 
 ol {
@@ -411,7 +431,6 @@ ol {
   }
 
   .logo,
-  .nav-link,
   .regis-l-item > span {
       font-size: 16px;
   }
@@ -549,6 +568,14 @@ ol {
                 var(--main-bg-color) 24px 0px 0px;
   }
 
+  .regis-block {
+    margin-top: 540px;
+  }
+
+  .team-container {
+    margin-top: 400px;
+  }
+
 }
 
 @media (min-width:992px) {
@@ -561,6 +588,14 @@ ol {
   .card-item {
     font-size: 24px;
   }
+
+  .regis-block {
+    margin-top: 480px;
+  }
+
+  .team-container {
+    margin-top: 320px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -569,11 +604,6 @@ ol {
     padding: 0;
     border-radius: 40px;
     margin-bottom: 120px;
-  }
-
-  .regis-block,
-  .team-container {
-    margin-top: 320px;
   }
 
   .program-block {
@@ -627,5 +657,12 @@ ol {
     margin-right: 24px;
   }
 
+  .regis-block {
+    margin-top: 340px;
+  }
+
+  .team-container {
+    margin-top: 220px;
+  }
 
 }
