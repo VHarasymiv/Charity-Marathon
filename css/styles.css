@@ -11,7 +11,8 @@ body {
   background-color: var(--main-bg-color);
 }
 
-h1, h3, h5, a, .btn, .distance-link {
+h1, h3, h5, a, .btn, .distance-link,
+.nav-item, .logo {
   color: inherit;
   font: 700 12px 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -451,6 +452,7 @@ ol {
   }
 
   .logo,
+  .nav-link,
   .regis-l-item > span {
       font-size: 16px;
   }
@@ -485,11 +487,7 @@ ol {
   .team-zcu-block {
     padding: 80px 12px;
   }
-
-  /* .team-block {
-    margin-top: 64px;
-  } */
-
+  
   .team-zcu-block {
     margin-top: 120px;
   }
