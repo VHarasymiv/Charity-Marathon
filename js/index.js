@@ -20,6 +20,38 @@ function formatPhoneNumber(value) {
 }
 
 
+var image = document.querySelector('#image');
+var imgSrc = ['images/fivekm.svg', 'images/threkm.svg', 'images/oneekm.svg'];
+
+function changeImage5() {
+        image.src = 'images/fivekm.svg';
+}
+
+function changeImage3() {
+          image.src = 'images/threkm.svg';
+}
+
+function changeImage1() {
+        image.src = 'images/oneekm.svg';
+}
+
+function showImageNext() {
+  if(image.src.toString().slice(-17) == imgSrc[0]) {
+    image.src = 'images/threkm.svg';
+  } else if(image.src.toString().slice(-17) == imgSrc[1]) {
+    image.src = 'images/oneekm.svg';
+  }
+}
+
+function showImagePrev() {
+  if(image.src.toString().slice(-17) == imgSrc[2]) {
+    image.src = 'images/threkm.svg';
+  } else if(image.src.toString().slice(-17) == imgSrc[1]) {
+    image.src = 'images/fivekm.svg';
+  }
+}
+
+
 // Success Page
 
 // var modal = null;

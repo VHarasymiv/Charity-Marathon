@@ -11,7 +11,7 @@ body {
   background-color: var(--main-bg-color);
 }
 
-h1, h3, h5, a, .btn {
+h1, h3, h5, a, .btn, .distance-link {
   color: inherit;
   font: 700 12px 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -128,11 +128,23 @@ a:active {
   margin-bottom: 88px;
 }
 
-/* .main-info {
+.main-info {
+  position: relative;
+}
+
+.main-info::before {
+  content: "";
   background-image: url("../images/blue.png"), url("../images/yellow.png");
-  background-position: center, bottom;
+  background-position: top, 30% 60%;
   background-repeat: no-repeat;
-} */
+  position: absolute;
+  background-size: auto 100% auto 100%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+}
 
 /* NAVIGATION */
 
@@ -145,7 +157,8 @@ a:active {
 }
 
 .nav-item>.active-page,
-.nav-item>.nav-link:hover {
+.nav-item>.nav-link:hover,
+.nav-item>.nav-link:focus {
   color: var(--orange);
 }
 
@@ -171,6 +184,15 @@ a:active {
 }
 
 /* BUTTONS */
+
+button {
+  border: none;
+}
+
+button:focus {
+  border: none;
+  color: red;
+}
 
 .btn {
   font-size: 14px;
@@ -257,7 +279,7 @@ a:active {
 }
 
 .card-item {
-  font-weight: 900;
+  font-weight: 600;
   line-height: 200%;
 }
 
