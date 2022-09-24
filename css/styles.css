@@ -167,7 +167,7 @@ a:active {
   color: var(--orange);
 }
 
-.nav-item > .arr-image:hover {
+.arr-image:hover {
   filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(3561%) hue-rotate(360deg) brightness(101%) contrast(109%);
 }
 
@@ -413,6 +413,26 @@ ol {
   margin: 12px 0 29px 0;
 }
 
+/* CAROUSEL */
+
+.carousel-i {
+  bottom: -48px;
+}
+
+.carousel-i [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  opacity: 1;
+  transition: background-color 0.6s ease;
+}
+
+.carousel-i .active {
+  background-color: var(--main-color);
+}
+
 /* MEDIA */
 
 @media (min-width:768px) {
@@ -466,9 +486,9 @@ ol {
     padding: 80px 12px;
   }
 
-  .team-block {
+  /* .team-block {
     margin-top: 64px;
-  }
+  } */
 
   .team-zcu-block {
     margin-top: 120px;
