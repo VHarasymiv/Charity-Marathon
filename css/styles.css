@@ -16,6 +16,7 @@ h1, h3, h5, a, .btn, .distance-link,
   color: inherit;
   font: 700 12px 'Montserrat', sans-serif;
   text-transform: uppercase;
+  font-style: italic;
 }
 
 h1,
@@ -176,6 +177,7 @@ a:active {
   bottom: 0px;
   left: 0px;
   opacity: 0.3;
+  z-index: -1;
 }
 
 /* NAVIGATION */
@@ -399,13 +401,11 @@ ol {
 }
 
 .contact-list-item {
-  /* box-shadow: 4px 8px rgba(63, 112, 166, 0.1); */
   background-color: #FFFFFF;
   display: inline-block;
   padding: 6px 12px;
   border-radius: 8px;
   margin-bottom: 12px;
-
 }
 
 .contact-block {
@@ -545,9 +545,12 @@ ol {
     padding: 80px 12px;
   }
 
-  .team-zcu-block,
-  .success-page  {
+  .team-zcu-block {
     margin-top: 120px;
+  }
+
+  .success-page {
+    margin-top: 30px;
   }
 
   .card-item {
@@ -690,6 +693,10 @@ ol {
 
   .team-container {
     margin-top: 320px;
+  }
+
+  .contact-list-item > a {
+    font-size: 16px;
   }
 
 }
