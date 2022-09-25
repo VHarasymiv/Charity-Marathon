@@ -15,10 +15,11 @@
 <body>
 
   <!-- Header -->
-  <header>
 
-    <nav class="container navbar navbar-expand-md main-nav">
-      <a class="navbar-brand logo" href="index.html">Brave Race</a>
+  <header id="main">
+
+    <nav class="container navbar navbar-expand-md">
+      <a class="navbar-brand logo" href="#main">Brave Race</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon navbar-burger-icon"></span>
       </button>
@@ -94,7 +95,7 @@
 
   <div class="container info-block">
     <ul class="d-flex d-md-flex flex-column flex-md-row justify-content-around px-0 mb-5 text-center">
-      <li class="contact-list-item">
+      <li class="contact-list-item info-block-list">
         <img class="img-fluid" src="images/date.png" alt=""><span class="ms-2">субота, 15 жовтня 2022</span>
       </li>
       <li class="contact-list-item">
@@ -109,7 +110,7 @@
 
   <!-- Distance -->
 
-  <section class="container distance-block">
+  <!-- <section class="container distance-block">
 
     <h3 class="distance-header"><span>Відправте донат <br /> та пробіжіть дистанцію</span></h3>
 
@@ -163,7 +164,7 @@
             </div>
           </div>
 
-          <div class="d-md-none carousel-indicators carousel-i">
+          <div class="d-md-none carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -171,6 +172,62 @@
 
         </div>
       </div>
+
+    </div>
+
+  </section> -->
+
+
+  <!-- Test -->
+
+  <section class="container distance-block">
+
+      <h3 class="distance-header"><span>Відправте донат <br /> та пробіжіть дистанцію</span></h3>
+
+      <div id="carouselExampleIndicators" class="carousel slide row justify-content-md-center car-block px-0" data-bs-ride="carousel">
+
+        <div class="col-11 col-sm-8 col-md-6 offset-md-1 px-0">
+
+          <p class="switch-color distance-text mt-0">
+            Ми підготували для вас три дистанції на вибір, щоб ви і ваші діти могли долучитися до свята та прийняти участь в забігу.
+            Реєстрація та старт знаходитимуться біля Кафедри фізичного виховання Політехніки
+          </p>
+
+          <div class="carousel-indicators carousel-i">
+            <button class="distance-link active pt-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1">5 КМ = 300 ГРН</button>
+            <button class="distance-link"  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">5 КМ = 300 ГРН</button>
+            <button class="distance-link pb-0" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">5 КМ = 300 ГРН</button>
+          </div>
+
+          <div class="d-none d-md-block car-btn-block">
+            <button class="me-3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span aria-hidden="true"><img class="arr-image" src="images/arrow-prev.svg" alt="" /></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span aria-hidden="true"><img class="arr-image" src="images/arrow-next.svg" alt="" /></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+
+
+        <div class="col-11 col-sm-8 col-md-4 offset-md-1 align-self-center px-0 mx-md-auto car-inner">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="img-fluid" src="images/threkm.svg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/fivekm.svg" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="img-fluid" src="images/oneekm.svg" alt="">
+              </div>
+            </div>
+        </div>
+
+
 
     </div>
 
@@ -229,18 +286,18 @@
         <!-- Subject -->
         <input type="hidden" name="_subject" value="Registration">
         <!-- Success page -->
-        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Charity-Marathon/index.html">
+        <input type="hidden" name="_next" value="https://vharasymiv.github.io/Charity-Marathon/success-page.html">
 
 
         <div class="input-inner">
           <input type="text" class="form-control input-item" name="Name" placeholder="ПІБ" required>
           <input type="text" onkeydown="phoneNumberFormatter()" id="phone-number" class="form-control input-item" name="Phone" placeholder="Телефон" required>
           <input type="email" class="form-control input-item" name="E-mail" placeholder="Електронна пошта" required>
-          <select class="form-select input-item">
+          <select class="form-select input-item" name="Distance">
             <option value="" class="regis-option" disabled selected>Виберіть дистанцію</option>
-            <option value="1" class="input-item">5 км</option>
-            <option value="2" class="input-item">3 км</option>
-            <option value="3" class="input-item">1 км</option>
+            <option value="5 км" class="input-item">5 км</option>
+            <option value="3 км" class="input-item">3 км</option>
+            <option value="1 км" class="input-item">1 км</option>
           </select>
         </div>
         <div class="d-grid">
@@ -408,7 +465,7 @@
             <!-- Subject -->
             <input type="hidden" name="_subject" value="Contact us">
             <!-- Success page -->
-            <input type="hidden" name="_next" value="https://vharasymiv.github.io/Charity-Marathon/index.html">
+            <input type="hidden" name="_next" value="https://vharasymiv.github.io/Charity-Marathon/success-page.html">
 
 
             <div>
@@ -416,7 +473,7 @@
               <input type="email" class="form-control input-item" name="E-mail" placeholder="Електронна пошта" required>
             </div>
             <div class="form-floating">
-              <textarea class="form-control input-text" style="height: 183px"></textarea>
+              <textarea class="form-control input-text" name="Message from client" style="height: 183px"></textarea>
             </div>
             <div class="d-grid">
               <button type="submit" class="btn">ВІДПРАВИТИ</button>
@@ -429,11 +486,11 @@
           <!-- List-item -->
           <ul class="contact-list ps-0 pe-3">
             <li class="contact-list-header">Бренд одягу <br /> «Brave Heart of Ukraine»</li>
-            <li class="contact-list-item me-4">
+            <li class="contact-list-item me-xxl-5">
               <a href="https://braveheartofua.com/" target=”_blank”><img class="img-fluid me-2" src="images/web.svg" alt=""> www.braveheartofua.com</a>
             </li>
-            <li class="contact-list-item">
-              <a href=""><img class="img-fluid me-2" src="images/mail.svg" alt=""> www.braveheartofua.com</a>
+            <li class="contact-list-item me-xl-5">
+              <a href=""><img class="img-fluid me-2" src="images/mail.svg" alt=""> brave.heart.of.ua@gmail.com</a>
             </li>
             <li>
               <a href="https://www.instagram.com/brave_heart_of_ua/" target=”_blank” class="pe-2"><img src="images/insta.svg" alt="" /></a>
@@ -451,10 +508,10 @@
           <!-- List-item -->
           <ul class="contact-list px-0">
             <li class="contact-list-header">Громадська організація <br /> «Розвиток Громади»</li>
-            <li class="contact-list-item">
+            <li class="contact-list-item me-md-5">
               <a href="https://rozvytok-hromady.com/" target=”_blank”><img class="img-fluid me-2" src="images/web.svg" alt=""> www.rozvytok-hromady.com</a>
             </li>
-            <li class="contact-list-item">
+            <li class="contact-list-item me-md-5">
               <a href=""><img class="img-fluid me-2" src="images/mail.svg" alt=""> rozvytok.hromady@gmail.com</a>
             </li>
           </ul>
@@ -476,7 +533,7 @@
   <footer>
     <div class="container">
       <div class="row justify-content-md-start footer-b px-0 mx-0">
-        <a class="navbar-brand logo me-5 mb-1" href="index.html">Brave Race</a>
+        <a class="navbar-brand logo me-5 mb-1" href="#main">Brave Race</a>
         <div class="col-11 col-md-7 px-0 align-self-center">
           <span>Цей захід створений з метою допомогти військовим 24 ОМБр</span>
         </div>

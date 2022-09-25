@@ -19,7 +19,8 @@ h1, h3, h5, a, .btn, .distance-link,
 }
 
 h1,
-.team-header {
+.team-header,
+.success-header {
   font-size: 24px;
 }
 
@@ -39,6 +40,7 @@ h3 {
 a {
   font: 500 12px/150% 'Literata', serif;
   text-decoration: none;
+  text-transform: lowercase;
 }
 /* BLOCKS */
 
@@ -47,7 +49,8 @@ footer,
 .main-info,
 .day-program,
 .team-block,
-.team-zcu-block {
+.team-zcu-block,
+.success-page {
     background-color: #FFFFFF;
 }
 
@@ -58,9 +61,30 @@ header {
 
 section {
   max-width: 335px;
-  border-radius: 24px;
   margin-bottom: 80px;
+}
+
+section,
+.success-page,
+.day-program  {
   padding: 48px 24px;
+}
+
+section,
+.success-page,
+.day-program,
+  .carousel-inner {
+      border-radius: 24px;
+  }
+
+.main-info,
+.info-block-list,
+.day-program,
+.team-block,
+.team-zcu-block,
+.success-page {
+  box-shadow: 4px 8px 24px rgba(63, 112, 166, 0.1);
+  backdrop-filter: blur(5px);
 }
 
 a:link,
@@ -69,6 +93,7 @@ a:hover,
 a:active {
   color: inherit;
 }
+
 
 /* TEAM */
 
@@ -136,6 +161,7 @@ a:active {
 
 .main-info {
   position: relative;
+  /* margin-top: 120px; */
 }
 
 .main-info::before {
@@ -261,10 +287,6 @@ button:focus {
   background-color: var(--main-bg-color);
   box-shadow: var(--main-bg-color) -13px 0px 0px,
               var(--main-bg-color) 16px 0px 0px;
-  &:after {
-  top: -13px;
-  left: 16px;
-}
 }
 
 .distance-link {
@@ -277,6 +299,10 @@ button:focus {
 
 .distance-text {
   margin: 20px 0 24px 0;
+}
+
+.distance-text {
+  margin-bottom: 24px;
 }
 
 .regis-l-item {
@@ -305,8 +331,6 @@ button:focus {
 .day-program {
   position: absolute;
   top: 60%;
-  padding: 48px 24px;
-  border-radius: 24px;
   opacity: 0.80;
 }
 
@@ -402,40 +426,68 @@ ol {
 
 /* Success Page */
 
-.success-header {
-}
-
-.success-page {
-  background: white;
-  padding: 24px 48px;
-  border-radius: 24px;
-}
-
 .success-text {
-  margin: 12px 0 29px 0;
+  margin-top: 12px;
+  margin-bottom: 35px;
+  max-width: 441px;
+}
+
+.success-image {
+  width: 136px;
 }
 
 /* CAROUSEL */
 
 .carousel-i {
-  bottom: -48px;
+  display: block;
+  position: static;
+  margin: 0;
+}
+
+.car-block {
+  margin-left: 4%;
+}
+
+.car-inner {
+  margin-top: 12px;
+}
+
+.car-btn-block {
+  margin-top: 53px;
 }
 
 .carousel-i [data-bs-target] {
-  width: 10px;
-  height: 10px;
-  background: transparent;
-  border: 2px solid var(--main-color);
-  border-radius: 50%;
+  flex: 0 0 auto;
+  display: block;
+  position: static;
+  text-indent: 0px;
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  margin: 0 0 12px 0;
+  background-color: transparent;
   opacity: 1;
-  transition: background-color 0.6s ease;
+  color: var(--main-color);
+  transition: color 0.6s ease;
 }
 
 .carousel-i .active {
-  background-color: var(--main-color);
+  color: var(--orange);
 }
 
 /* MEDIA */
+
+@media (min-width:576px) {
+  .regis-block {
+    margin-top: 480px;
+  }
+    .team-container {
+      margin-top: 380px;
+    }
+}
+
+
 
 @media (min-width:768px) {
   header {
@@ -471,6 +523,10 @@ ol {
     max-width: 305px;
   }
 
+  .success-btn {
+    max-width: none;
+  }
+
   .main-info {
     padding-bottom: 0;
   }
@@ -489,7 +545,8 @@ ol {
     padding: 80px 12px;
   }
 
-  .team-zcu-block {
+  .team-zcu-block,
+  .success-page  {
     margin-top: 120px;
   }
 
@@ -502,7 +559,8 @@ ol {
   }
 
   .distance-block,
-  .regis-block {
+  .regis-block,
+  .success-page  {
     padding: 80px 0 80px 0;
   }
 
@@ -595,6 +653,24 @@ ol {
     margin-top: 400px;
   }
 
+  .success-text {
+    margin-top: 24px;
+    margin-bottom: 41px;
+    max-width: 441px;
+  }
+
+  .success-image {
+    width: 160px;
+  }
+
+  .car-block {
+    margin-left: 0;
+  }
+
+  .car-inner {
+    margin-top: 0;
+  }
+
 }
 
 @media (min-width:992px) {
@@ -615,14 +691,20 @@ ol {
   .team-container {
     margin-top: 320px;
   }
+
 }
 
 @media (min-width:1200px) {
 
   section {
     padding: 0;
-    border-radius: 40px;
     margin-bottom: 120px;
+  }
+
+  section,
+  .success-page,
+  .carousel-inner {
+    border-radius: 40px;
   }
 
   .program-block {
@@ -630,7 +712,8 @@ ol {
   }
 
   h1,
-  .team-header {
+  .team-header,
+  .success-header {
     font-size: 48px;
   }
 
@@ -658,10 +741,6 @@ ol {
     width: 370px;
   }
 
-  .distance-link {
-    font-size: 48px;
-  }
-
   .team-g-img {
       width: 214px;
     height: 214px;
@@ -682,6 +761,10 @@ ol {
 
   .team-container {
     margin-top: 220px;
+  }
+
+  .distance-link {
+    font-size: 48px;
   }
 
 }
