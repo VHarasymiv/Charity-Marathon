@@ -196,7 +196,12 @@ a:active {
   color: var(--orange);
 }
 
-.arr-image:hover {
+.arrow-up-img {
+  width: 40px;
+}
+
+.arr-image:hover,
+.arrow-up-img:hover {
   filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(3561%) hue-rotate(360deg) brightness(101%) contrast(109%);
 }
 
@@ -672,6 +677,10 @@ ol {
 
   .car-inner {
     margin-top: 0;
+  }
+
+  .arrow-up-img {
+    width: 60px;
   }
 
 }
