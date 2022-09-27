@@ -83,7 +83,8 @@ section,
 .day-program,
 .team-block,
 .team-zcu-block,
-.success-page {
+.success-page,
+.arrow-up-img {
   box-shadow: 4px 8px 24px rgba(63, 112, 166, 0.1);
   backdrop-filter: blur(5px);
 }
@@ -196,12 +197,9 @@ a:active {
   color: var(--orange);
 }
 
-.arrow-up-img {
-  width: 40px;
-}
-
 .arr-image:hover,
-.arrow-up-img:hover {
+.arrow-up-img:hover,
+.arr-up-mobile:hover {
   filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(3561%) hue-rotate(360deg) brightness(101%) contrast(109%);
 }
 
